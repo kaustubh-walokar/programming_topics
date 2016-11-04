@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Programming topics by kaustubh-walokar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Programming topics</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/kaustubh-walokar/programming_topics" class="btn">View on GitHub</a>
+      <a href="https://github.com/kaustubh-walokar/programming_topics/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/kaustubh-walokar/programming_topics/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="topics" class="anchor" href="#topics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Topics</h1>
+
+<h2>
+<a id="recursion" class="anchor" href="#recursion" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Recursion</h2>
+
+<ol>
+<li>
+<p>CS106B Stanford - Programming Abstractions</p>
+
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=uFJhEPrbycQ">Lecture 9</a></p>
+
+<div class="highlight highlight-source-java"><pre><span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">void</span> permutation(<span class="pl-smi">String</span> str) { 
+    permutation(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>, str); 
+}
+
+<span class="pl-k">private</span> <span class="pl-k">static</span> <span class="pl-k">void</span> permutation(<span class="pl-smi">String</span> prefix, <span class="pl-smi">String</span> str) {
+    <span class="pl-k">int</span> n <span class="pl-k">=</span> str<span class="pl-k">.</span>length();
+    <span class="pl-k">if</span> (n <span class="pl-k">==</span> <span class="pl-c1">0</span>) <span class="pl-smi">System</span><span class="pl-k">.</span>out<span class="pl-k">.</span>println(prefix);
+    <span class="pl-k">else</span> {
+        <span class="pl-k">for</span> (<span class="pl-k">int</span> i <span class="pl-k">=</span> <span class="pl-c1">0</span>; i <span class="pl-k">&lt;</span> n; i<span class="pl-k">++</span>)
+            permutation(prefix <span class="pl-k">+</span> str<span class="pl-k">.</span>charAt(i), str<span class="pl-k">.</span>substring(<span class="pl-c1">0</span>, i) <span class="pl-k">+</span> str<span class="pl-k">.</span>substring(i<span class="pl-k">+</span><span class="pl-c1">1</span>, n));
+    }
+}</pre></div>
+</li>
+<li>
+<p><a href="https://youtu.be/NdF1QDTRkck">Lecture 10</a></p>
+
+<div class="highlight highlight-source-java"><pre><span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">void</span> combinations(<span class="pl-smi">String</span> str) { 
+    combinations(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>, str); 
+}
+
+<span class="pl-k">private</span> <span class="pl-k">static</span> <span class="pl-k">void</span> combinations(<span class="pl-smi">String</span> prefix, <span class="pl-smi">String</span> str) {
+    <span class="pl-k">int</span> n <span class="pl-k">=</span> str<span class="pl-k">.</span>length();
+    <span class="pl-k">if</span> (n <span class="pl-k">==</span> <span class="pl-c1">0</span>) <span class="pl-smi">System</span><span class="pl-k">.</span>out<span class="pl-k">.</span>println(prefix);
+    <span class="pl-k">else</span> {
+         combination(prefix <span class="pl-k">+</span> str<span class="pl-k">.</span>charAt(i), str<span class="pl-k">.</span>substring(i));
+         combination(prefix , str<span class="pl-k">.</span>substring(i));
+    }
+}</pre></div>
+</li>
+</ul>
+
+<h2>
+<a id="hashing" class="anchor" href="#hashing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hashing</h2>
+
+<ol>
+<li><a href="https://www.youtube.com/watch?v=HtSuA80QTyo&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">CS006 MIT - Introduction To Algorithms</a></li>
+<li>Lecture 7</li>
+<li>Lecture 8</li>
+<li>Lecture 9</li>
+</ol>
+
+<h2>
+<a id="newtons-method" class="anchor" href="#newtons-method" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Newtons Method</h2>
+
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Newton%27s_method">Wiki- Newtons Method</a></li>
+<li><a href="http://tutorial.math.lamar.edu/Classes/CalcI/NewtonsMethod.aspx">http://tutorial.math.lamar.edu/Classes/CalcI/NewtonsMethod.aspx</a></li>
+</ol>
+</li>
+</ol>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/kaustubh-walokar/programming_topics">Programming topics</a> is maintained by <a href="https://github.com/kaustubh-walokar">kaustubh-walokar</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
