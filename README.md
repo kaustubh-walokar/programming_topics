@@ -41,3 +41,6 @@
     * Lecture 9
     
 ## Newtons Method
+
+ 1. [Wiki- Newtons Method](https://en.wikipedia.org/wiki/Newton%27s_method)
+ 2. <http://tutorial.math.lamar.edu/Classes/CalcI/NewtonsMethod.aspx>
