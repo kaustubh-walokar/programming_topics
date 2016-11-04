@@ -19,23 +19,25 @@
         }
        ```
     * [Lecture 10](https://youtu.be/NdF1QDTRkck)
-    ```java
-            public static void combinations(String str) { 
-                combinations("", str); 
+        ```java
+        public static void combinations(String str) { 
+            combinations("", str); 
+        }
+        
+        private static void combinations(String prefix, String str) {
+            int n = str.length();
+            if (n == 0) System.out.println(prefix);
+            else {
+                 combination(prefix + str.charAt(i), str.substring(i));
+                 combination(prefix , str.substring(i));
             }
-            
-            private static void combinations(String prefix, String str) {
-                int n = str.length();
-                if (n == 0) System.out.println(prefix);
-                else {
-                     combination(prefix + str.charAt(i), str.substring(i));
-                     combination(prefix , str.substring(i));
-                }
-            }
-    ```
+        }
+        ```
 
 ## Hashing
 1. [CS006 MIT - Introduction To Algorithms](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
     * Lecture 7
     * Lecture 8
     * Lecture 9
+    
+## Newtons Method
